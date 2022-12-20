@@ -12,6 +12,6 @@ const Ship = length => {
         hit,
         isSunk
     };
-}
+};
 
-export { Ship }
+export { Ship };
