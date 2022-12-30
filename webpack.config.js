@@ -20,7 +20,7 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        globalObject: 'this',
+        // globalObject: 'this',
         environment: {
             arrowFunction: false
         }
@@ -38,7 +38,7 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: [
-                            ['@babel/preset-env', { targets: ">0.25%" }]
+                            ['@babel/preset-env', { targets: ">0.25%, not dead" }]
                         ]
                     }
                 }
